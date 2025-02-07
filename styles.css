@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #0068ad;
+    --secondary-color: #24bec9;
+    --background-color: #c5dadb;
+    --text-color: #242424;
+    --font-size-base: 16px;
+    --font-size-large: 24px;
+    --font-size-small: 14px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: var(--font-size-large);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-base);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.flexbox-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--padding-base);
+}
+
+.flex-item {
+    padding: 20px;
+    background-color: #555;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #555;
+    text-align: center;
+}
+
+.relative-container {
+    position: relative;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+}
